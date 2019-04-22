@@ -43,6 +43,8 @@ public class LoginServlet extends HttpServlet {
 			else
 			{
 				System.out.println("not successfull");
+				RequestDispatcher dispatcher=request.getRequestDispatcher("login.html");
+				dispatcher.forward(request, response);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 

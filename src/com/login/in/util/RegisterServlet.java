@@ -48,12 +48,12 @@ public class RegisterServlet extends HttpServlet {
 			
 			if(b>0)
 			{
-				RequestDispatcher dispatcher=request.getRequestDispatcher("temp.html");
+				RequestDispatcher dispatcher=request.getRequestDispatcher("login.html");
 				dispatcher.forward(request, response);
 			}
 			else
 			{
-				System.out.println("dta is not proper");
+				System.out.println("dta is not proper please try again...");
 			}
 			
 		} catch (ClassNotFoundException | SQLException | ServletException | IOException e) {
